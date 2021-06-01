@@ -45,9 +45,14 @@
     </div>
 
   </header>
+
   <div class="wrapper">
     <main class="main">
-
+      <!-- <div class="scroll-up--wprapper">
+        <a class="scroll-up" href="">
+          <img src="images/icon-scroll-up.png" alt="">
+        </a>
+      </div> -->
       <section class="content">
         <div class="container">
           <div class="content__inner">
@@ -58,11 +63,13 @@
             </div>
 
             <div class="content__cards">
-              <div class="content__cards-inner">
-                <div class="content__item">
+              <div id="cards" class="content__cards-inner">
+
+                <!-- 1 -->
+                <div class="content__item" data-price="30000" data-age="2.5">
                   <img class="content__item-img" src="./images/cat-1.jpg" alt="">
                   <span class="content__item-discount">-40%</span>
-                  <span class="content__item-like"></span>
+                  <span id="like" class="content__item-like"></span>
                   <div class="content__item-desc">
                     <p class="content__item-name">Кот полосатый</p>
                     <div class="content__category">
@@ -71,7 +78,7 @@
                         окрас
                       </span>
                       <span class="content__item-age">
-                        <b>2 мес.</b> <br>
+                        <b>2.5 мес.</b> <br>
                         Возраст
                       </span>
                       <span class="content__item-paws">
@@ -83,9 +90,11 @@
                   </div>
                   <button class="content__item-btn-buy">Купить</button>
                 </div>
-                <div class="content__item">
+
+                <!-- 2 -->
+                <div class="content__item" data-price="40000" data-age="4.5">
                   <img class="content__item-img" src="./images/cat-2.jpg" alt="">
-                  <span class="content__item-liked"></span>
+                  <span id="like" class="content__item-liked"></span>
                   <div class="content__item-desc">
                     <p class="content__item-name">Кот полосатый</p>
                     <div class="content__category">
@@ -94,7 +103,7 @@
                         окрас
                       </span>
                       <span class="content__item-age">
-                        <b>2 мес.</b> <br>
+                        <b>4.5 мес.</b> <br>
                         Возраст
                       </span>
                       <span class="content__item-paws">
@@ -106,9 +115,11 @@
                   </div>
                   <button class="content__item-btn-sold">Продан</button>
                 </div>
-                <div class="content__item">
+
+                <!-- 3 -->
+                <div class="content__item" data-price="20000" data-age="3">
                   <img class="content__item-img" src="./images/cat-3.jpg" alt="">
-                  <span class="content__item-like"></span>
+                  <span id="like" class="content__item-like"></span>
                   <div class="content__item-desc">
                     <p class="content__item-name">Кот полосатый</p>
                     <div class="content__category">
@@ -117,7 +128,7 @@
                         окрас
                       </span>
                       <span class="content__item-age">
-                        <b>2 мес.</b> <br>
+                        <b>3 мес.</b> <br>
                         Возраст
                       </span>
                       <span class="content__item-paws">
@@ -129,10 +140,12 @@
                   </div>
                   <button class="content__item-btn-buy">Купить</button>
                 </div>
-                <div class="content__item">
+
+                <!-- 4 -->
+                <div class="content__item" data-price="25000" data-age="2">
                   <img class="content__item-img" src="./images/cat-1.jpg" alt="">
-                  <span class="content__item-like"></span>
-                  <div class="content__item-desc">
+                  <span id="like" class="content__item-like"></span>
+                  <div class=" content__item-desc">
                     <p class="content__item-name">Кот полосатый</p>
                     <div class="content__category">
                       <span class="content__item-color">
@@ -152,10 +165,11 @@
                   </div>
                   <button class="content__item-btn-buy">Купить</button>
                 </div>
-                <div class="content__item">
+                <!-- 5 -->
+                <div class="content__item" data-price="30000" data-age="4">
                   <img class="content__item-img" src="./images/cat-3.jpg" alt="">
                   <span class="content__item-discount">-40%</span>
-                  <span class="content__item-like"></span>
+                  <span id="like" class="content__item-like"></span>
                   <div class="content__item-desc">
                     <p class="content__item-name">Кот полосатый</p>
                     <div class="content__category">
@@ -164,7 +178,7 @@
                         окрас
                       </span>
                       <span class="content__item-age">
-                        <b>2 мес.</b> <br>
+                        <b>4 мес.</b> <br>
                         Возраст
                       </span>
                       <span class="content__item-paws">
@@ -176,9 +190,10 @@
                   </div>
                   <button class="content__item-btn-buy">Купить</button>
                 </div>
-                <div class="content__item">
+                <!-- 6 -->
+                <div class="content__item" data-price="10000" data-age="2">
                   <img class="content__item-img" src="./images/cat-2.jpg" alt="">
-                  <span class="content__item-liked"></span>
+                  <span id="like" class="content__item-liked"></span>
                   <div class="content__item-desc">
                     <p class="content__item-name">Кот полосатый</p>
                     <div class="content__category">
@@ -204,6 +219,11 @@
               <div class="content__cards-show-more">
                 <a class="content__cards-show-more--text" href="#">Показать еще 20</a>
               </div>
+              <div class="scroll-up--wprapper">
+                <a class="scroll-up" href="#">
+                  <img src="images/icon-scroll-up.png" alt="">
+                </a>
+              </div>
 
             </div>
           </div>
@@ -220,11 +240,14 @@
           </div>
           <div class="footer__subscribtion">
             <div class="footer__form">
-              <input class="footer__input--email" type="email" name="" id="" placeholder="Email">
-              <button class="footer__btn--subscribe" type="submit">Подписаться</button>
+              <input class="footer__input--email" type="email" name="" id="" placeholder="Email" required>
+              <button class="footer__btn--subscribe" type="submit" onclick="ValidateEmail()">Подписаться</button>
+
             </div>
+            <span class="error"></span>
+
             <div class="footer__checkbox"></div>
-            <input class="footer__checkbox--input" type="checkbox" id="subToNews" name="color-1" value="indigo">
+            <input class="footer__checkbox--input" type="checkbox" id="subToNews" name="color-1" value="">
             <label class="footer__checkbox--text" for="subToNews">Подписаться на новости</label>
           </div>
         </div>
@@ -232,7 +255,14 @@
     </footer>
   </div>
 
-
+  <!-- <div class="form">
+    <div class="form-row">
+      <div class="form-col">
+        <input type="text" class="email" placeholder="E-mail">
+      </div>
+    </div>
+    <button type="submit" class="btn-submit">Get Discount</button>
+  </div> -->
 
   <script src="js/main.min.js"></script>
 </body>

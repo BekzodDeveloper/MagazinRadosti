@@ -213,6 +213,10 @@ body {
   color: #fff;
 }
 
+.content {
+  position: relative;
+}
+
 .content__inner {
   margin-top: 37px;
   margin-bottom: 38px;
@@ -444,6 +448,36 @@ body {
   color: #000;
 }
 
+.scroll-up--wprapper {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.scroll-up {
+  width: 60px;
+  height: 60px;
+  background-color: #6ebbd3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #1f2021;
   max-width: 1280px;
@@ -509,8 +543,8 @@ body {
 }
 
 .footer__input--email:focus {
-  -webkit-box-shadow: 0px 0px 1px 1px #fff;
-          box-shadow: 0px 0px 1px 1px #fff;
+  -webkit-box-shadow: 0px 0px 5px 5px #80bdff86;
+          box-shadow: 0px 0px 5px 5px #80bdff86;
 }
 
 .footer__btn--subscribe {
@@ -534,7 +568,7 @@ body {
 }
 
 .footer__btn--subscribe:active {
-  color: #e52d2d;
+  background-color: #e52d2d;
 }
 
 .footer__checkbox {
@@ -611,6 +645,10 @@ body {
   line-height: 17px;
   margin-top: 24px;
   cursor: pointer;
+}
+
+.footer .error {
+  color: #e52d2d;
 }
 
 @media (max-width: 1024px) {
